@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="media/Bellarina.otf">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <title>Mi nuevo layout</title>
+</head>
+<body class="wrapper">
+    <symbol class="svgSprite">
+        <svg class="svg" id="ico-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+        <svg class="svg" id="ico-github" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+    </symbol>
+    <header class="header">
+        <nav class="header__nav" id="header__nav">
+            <h1 class="header__nav--logo"><a href="">Mi CV</a></h1>
+            <input type="checkbox" id="miCheckbox-chk">
+            <label class="miCheckbox" for="miCheckbox-chk">menu</label>
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#personal-date">Datos personales</a></li>
+                <li class="header__list-item"><a href="#experience">Experiencia</a></li>
+                <li class="header__list-item"><a href="#education">Educación</a></li>
+                <li class="header__list-item"><a href="#competence">Competencias</a></li>
+                <li class="header__list-item"><a href="#language">Idiomas</a></li>
+                <li class="header__list-item"><a href="#skill">Habilidades</a></li>
+            </ul>
+        </nav>
+        <div class="header__text">
+            <h2 class="header__text--name">María del Mar Pérez Ruiz</h2>
+            <p class="header__text--job">Front End Developer and Digital Marketing Specialist</p>
+        </div>
+    </header>
+    <main>
+        <section id="personal-date">
+            <article class="personal-date__content">
+                <h3 class="personal-date__title">Datos personales</h3 class="personal-date__content">
+                    <span class="personal-date__box-leaf"><img src="img/hoja2.gif" class="personal-date__leaf" alt="hoja decorativa"></span>
+                <address class="personal-date__dates">
+                    <div class="personal-date__dates-info">CIUDAD</div>
+                    <div class="personal-date__dates-info">MADRID</div>
+                    <div class="personal-date__dates-info">EMAIL</div>
+                    <div class="personal-date__dates-info"><a href="mailto:mdmperez91@gamil.com"> MDMPEREZ91@GMAIL.COM</a></div>
+                    <div class="personal-date__dates-info">TELÉFONO</div>
+                    <div class="personal-date__dates-info"><a href="tel:+34691568853"> 691 56 88 53</a></div>
+                    <div class="personal-date__dates-info">NACIMIENTO</div>
+                    <div class="personal-date__dates-info">16 . 02 . 91</div>
+                    <div class="personal-date__dates-info">SOCIAL</div>
+                    <div class="personal-date__dates-info">
+                        <a target="_blank" href="https://www.linkedin.com/in/mdmperez/"><svg><use xlink:href="#ico-linkedin"></use></svg></a target="_blank">
+                        <a target="_blank" href="https://github.com/mdmperez"><svg><use xlink:href="#ico-github"></use></svg></a>
+                    </div>
+                </address class="personal-date__content">
+            </article>
+        </section>
+        <section id="experience">
+            <h3 class="experience__item title">Experiencia</h3>
+            <div class="experience__item even">
+                <ul class="experience_list">
+                    <li class="experience_item-list--job">ACCOUNT EXECUTIVE</li>
+                    <li class="experience_item-list--business">MarketiNet</li>
+                    <li class="experience_item-list--date">Inicio: Junio 2016<br>Fin: Diciembre 2019</li>
+                    <button class="experience_list__btn ">+ info</button>
+                    <div class="experience_list__tooltip ">
+                        <p class="experience_list__tooltip--title">Funciones</p>
+                        <a class="experience_list__tooltip--close">&times;</a>
+                        <p class="experience_list__tooltip--content">Liderazgo del equipo de trabajo, gestión de clientes y coordinación de proyectos digitales: UX, briefings, Social y Google Ads, email Marketing, planificación y estrategia. Además, maquetación de emails a medida en HTML.</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="experience__item">
+                <ul class="experience_list">
+                    <li class="experience_item-list--job">SOCIAL MEDIA MANAGER</li>
+                    <li class="experience_item-list--business">Global Media Dominicana</li>
+                    <li class="experience_item-list--date">Inicio: Octubre 2015<br>Fin: Abril 2016</li>
+                    <button class="experience_list__btn">+ info</button>
+                    <div class="experience_list__tooltip ">
+                        <p class="experience_list__tooltip--title">Funciones</p>
+                        <a class="experience_list__tooltip--close">&times;</a>
+                        <p class="experience_list__tooltip--content">Estrategia de marca para los distintos clientes: construcción, gestión y administración de su comunidad online, redacción de copys, post para blogs, diseño de creatividades y elaboración de email marketing.</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="experience__item even">
+                <ul class="experience_list">
+                    <li class="experience_item-list--job">BARISTA</li>
+                    <li class="experience_item-list--business">Mc Donald´s España</li>
+                    <li class="experience_item-list--date">Inicio: Mayo 2013<br>Fin: Septiembre 2015</li>
+                    <button class="experience_list__btn">+ info</button>
+                    <div class="experience_list__tooltip">
+                        <p class="experience_list__tooltip--title">Funciones</p>
+                        <a class="experience_list__tooltip--close">&times;</a>
+                        <p class="experience_list__tooltip--content">Personal de equipo con especialidad en el área de Mc Café. Servicio al cliente, elaboración de bebidas y horneado de pastelería, formación al nuevo personal, decoración del local, colaboración en promociones y nuevos proyectos.</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="experience__item">
+                <ul class="experience_list">
+                    <li class="experience_item-list--job">LOCUTORA / REDACTORA</li>
+                    <li class="experience_item-list--business">Radio Ciudad Roquetas de Mar</li>
+                    <li class="experience_item-list--date">Inicio: Junio 2012<br>Fin: Septiembre 2012</li>
+                    <button class="experience_list__btn">+ info</button>
+                    <div class="experience_list__tooltip">
+                        <p class="experience_list__tooltip--title">Funciones</p>
+                        <a class="experience_list__tooltip--close">&times;</a>
+                        <p class="experience_list__tooltip--content">Redactora y locutora para cadena de radio local, realizando actividades de redacción, locución y montaje de programas de radio e informativos. Cobertura de eventos y elaboración de espacios publicitarios.</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="experience__item even">
+                <ul class="experience_list">
+                    <li class="experience_item-list--job">REDACTORA</li>
+                    <li class="experience_item-list--business">Punto de Encuentro Complutense</li>
+                    <li class="experience_item-list--date">Inicio: Septiembre 2010<br>Fin: Mayo 2012</li>
+                    <button class="experience_list__btn">+ info</button>
+                    <div class="experience_list__tooltip">
+                        <p class="experience_list__tooltip--title">Funciones</p>
+                        <a class="experience_list__tooltip--close">&times;</a>
+                        <p class="experience_list__tooltip--content">Redactora de la sección cultural de la web universitaria. Cobertura de eventos (festivales, teatros, musicales...), redacción de notas de prensa y actualizaciones de la propia web.</span>
+                    </div>
+                </ul>
+            </div>
+
+        </section>
+        <section id="education">
+            <header class="education-header"> 
+                <h3 class="education__title">Educación</h3>
+            </header>
+            <div class="education__galery">
+                <article class="education__card">
+                    <ul class="education__card--list">
+                        <li class="education__training">MÁSTER</li>
+                        <li class="education__name-training">Desarrollo Front-End de interfaces con HTML5, CSS y JavaScript</li>
+                        <li class="education__school"><strong class="strong">Centro:</strong> Fictizia</li>
+                        <li class="education__start"><strong class="strong">Inicio:</strong> Octubre 2019</li>
+                        <li class="education__end"><strong class="strong">Fin:</strong> Marzo 2020</li>
+                    </ul>
+                </article>
+                <article class="education__card">
+                    <ul class="education__card--list">
+                        <li class="education__training">CURSO</li>
+                        <li class="education__name-training">Diseño de interfaces y User Experience</li>
+                        <li class="education__school"><strong class="strong">Centro:</strong> Platzi</li>
+                        <li class="education__start"><strong class="strong">Inicio:</strong> Junio 2018</li>
+                        <li class="education__end"><strong class="strong">Fin:</strong> Agosto 2018</li>
+                    </ul>
+                </article>
+                <article class="education__card">
+                    <ul class="education__card--list">
+                        <li class="education__training">ACREDITACIÓN</li>
+                        <li class="education__name-training">Inbound Marketing</li>
+                        <li class="education__school"><strong class="strong">Centro:</strong> Hubspot</li>
+                        <li class="education__start"><strong class="strong">Fecha última actualización:</strong> Agosto 2019</li>
+
+                    </ul>
+                </article>
+                <article class="education__card">
+                    <ul class="education__card--list">
+                        <li class="education__training">MÁSTER</li>
+                        <li class="education__name-training">Dirección Comercial y Marketing</li>
+                        <li class="education__school"><strong class="strong">Centro:</strong> Universidad Camilo José Cela</li>
+                        <li class="education__start"><strong class="strong">Inicio:</strong> Septiembre 2014</li>
+                        <li class="education__end"><strong class="strong">Fin:</strong> Septiembre 2015</li>
+                    </ul>
+                </article>
+                <article class="education__card">
+                    <ul class="education__card--list">
+                        <li class="education__training">CURSO</li>
+                        <li class="education__name-training">Community Manager</li>
+                        <li class="education__school"><strong class="strong">Centro:</strong> Universidad Camilo José Cela</li>
+                        <li class="education__start"><strong class="strong">Inicio:</strong> Enero 2015</li>
+                        <li class="education__end"><strong class="strong">Fin:</strong> Junio 2015</li>
+                    </ul>
+                </article>
+                <article class="education__card">
+                    <ul class="education__card--list">
+                        <li class="education__training">LICENCIATURA</li>
+                        <li class="education__name-training">Periodismo</li>
+                        <li class="education__school"><strong class="strong">Centro:</strong> Universidad Complutense de Madrid</li>
+                        <li class="education__start"><strong class="strong">Inicio:</strong> Septiembre 2009</li>
+                        <li class="education__end"><strong class="strong">Fin:</strong> Septiembre 2014</li>
+                    </ul>
+                </article>
+            </div>
+
+        </section>
+        <section id="competence">
+            <header class="competence__title">Competencias</header>
+            <div class="competence__content">
+                <ul class="competence__list">
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:80%" data-value="80">Social Media</p>
+                            <progress max="100" value="80" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:50%" data-value="50">Google Adwords</p>
+                        <progress max="100" value="50" class="competence__progress-bar"> </progress>
+                    </li> 
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:70%" data-value="80">Marketing Cloud</p>
+                        <progress max="100" value="70" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:40%" data-value="40">Hubspot</p>
+                        <progress max="100" value="40" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:70%" data-value="70">Mailchimp</p>
+                        <progress max="100" value="70" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:95%" data-value="95">Microsoft Office</p>
+                        <progress max="100" value="95" class="competence__progress-bar"> </progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:80%" data-value="80">Photoshop</p>
+                        <progress max="100" value="80" class="competence__progress-bar"> </progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:90%" data-value="90">HTML5</p>
+                        <progress max="100" value="90" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:90%" data-value="80">CSS3</p>
+                        <progress max="100" value="80" class="competence__progress-bar"> </progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:90%" data-value="80">Responsive</p>
+                        <progress max="100" value="80" class="competence__progress-bar"> </progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:60%" data-value="60">Sass</p>
+                        <progress max="100" value="60" class="competence__progress-bar"> </progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:30%" data-value="30">JavaScript</p>
+                        <progress max="100" value="30" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:40%" data-value="40">AJAX</p>
+                        <progress max="100" value="40" class="competence__progress-bar"></progress>
+                    </li>
+                    <li class="competence__content--item">
+                        <p class="competence__progress-text" style="width:50%" data-value="50">GIT</p>
+                        <progress max="100" value="50" class="competence__progress-bar"> </progress>
+                    </li> 
+                </ul>
+            </div>
+        </section> 
+        <section id="language">
+            <header class="language__title">Idiomas</header>
+            <ul class="language__content">
+                <li class="language__item">
+                    <span class="language__name">Castellano</span>
+                    <section>
+                        <svg height="120" width="120">
+                          <circle cx="60" cy="60" r="40" stroke="#d3d7d8" stroke-width="8" fill="none" />
+                          <circle 
+                                  r="40" 
+                                  cx="60" 
+                                  cy="60" 
+                                  stroke="#142424" 
+                                  fill="transparent" 
+                                  stroke-dasharray="380" 
+                                  stroke-dashoffset="60" 
+                                  stroke-width="7">
+                          </circle>
+                          <text x="45" y="65" fill="#142424">100%</text>
+                        </svg>   
+                    </section>
+                    
+                </li>
+                <li class="language__item">
+                    <span class="language__name">Inglés</span>
+                    <section>
+                        <svg height="120" width="120">
+                          <circle cx="60" cy="60" r="40" stroke="#d3d7d8" stroke-width="8" fill="none" />
+                          <circle 
+                                  r="40" 
+                                  cx="60" 
+                                  cy="60" 
+                                  stroke="#142424" 
+                                  fill="transparent" 
+                                  stroke-dasharray="230" 
+                                  stroke-dashoffset="60" 
+                                  stroke-width="7">
+                          </circle>
+                          <text x="45" y="65" fill="#142424">70%</text>
+                        </svg>   
+                      </section>
+                    
+                </li>
+                <li class="language__item">
+                    <span class="language__name">Francés</span>
+                    <section>
+                        <svg height="120" width="120">
+                          <circle cx="60" cy="60" r="40" stroke="#d3d7d8" stroke-width="8" fill="none" />
+                          <circle 
+                                  r="40" 
+                                  cx="60" 
+                                  cy="60" 
+                                  stroke="#142424" 
+                                  fill="transparent" 
+                                  stroke-dasharray="150" 
+                                  stroke-dashoffset="60" 
+                                  stroke-width="7">
+                          </circle>
+                          <text x="45" y="65" fill="#142424">40%</text>
+                        </svg>   
+                    </section>
+                    
+                </li>
+            </ul>
+        </section>
+         <section id="skill">
+            <header class="skill__title">Habilidades</header>
+            <div class="skill__content">
+                <p class="skill__text"> Me considero una persona muy trabajadora, comprometida, implicada, resuelta… Siempre con aspiraciones de seguir creciendo profesional y personalmente. Autodidacta e inquieta.</p>
+                <p class="skill__text prominent">¿Hablamos?</p>
+            </div>
+        </section> 
+    </main>
+    <script src="js.js" type="text/javascript"></script>
+</body>
+</html>
