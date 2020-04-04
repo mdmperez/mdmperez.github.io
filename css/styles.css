@@ -163,7 +163,7 @@ img {
 		width: 66px;
 		height: 50px;
 		top: 0.5rem;
-		right: 0;
+		right: 0.02rem;
 		background:var(--color-transparent);
 		border-radius: 7px 0 0 7px ;
 		position: fixed;
@@ -171,7 +171,6 @@ img {
 
 	.header__list {
 		position: fixed;
-	
 	}
 }
 
@@ -503,7 +502,6 @@ img {
 	border-radius: 10px; 
 }
 
-
 .even {
 	background: var(--color-soft);
 }
@@ -601,44 +599,6 @@ img {
 	overflow: auto;
 }
 
-/* .experience_item-list--info {
-	width: 60px;
-	font-size: var(--text-xs);
-	padding: .5em;
-	border: 1px solid var(--color-positive);
-	border-radius: 4px;
-	position: relative;
-	
-}
-
- 
-.experience_item-list--info:hover {
-	cursor: help; 
-	color: var(--color-main);
-	border: 1px solid var(--color-main);
- }
- 
- .experience_item-list--info::before {
-	content: attr(data-abbr);
-	position: absolute;
-	text-decoration: none;
-	padding: 1rem;
-	background: var(--color-main);
-	border-radius: 5px;
-	min-height: 1rem;
-	width: 205px;
-	transform: translate(50px, -180px);
-	color: var(--color-negative);
-	
-	opacity: 0;
-	transition: opacity ease .75s;
-  
- }
-
- .experience_item-list--info:hover::before {
-	opacity: 1;
- } */
-
 /* 	EDUCACIÓN */
 
 #education {
@@ -649,13 +609,18 @@ img {
 	background-image: linear-gradient(to bottom right, var(--color-secondary), var(--color-soft));
 }
 
+
+@media (max-width: 430px) {
+	#education {
+		padding: 2rem 1rem;
+	}
+}
+
 .education-header {
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
-
 }
-
 
 .education__title {
 	font-family: var(--title-ff);
@@ -678,22 +643,20 @@ img {
 	border-radius: 10px;
 	padding: 2rem;
 	margin: 1rem;
-	max-width: 280px;
+	width: 280px;
 	min-height: 280px;
 	font-family: var(--default-ff);
 	animation: inicioEducation .6s ease-in;
-
 }
 
 @keyframes inicioEducation {
 	0% {
-		box-shadow: 0 0 20px 0px rgba(156, 156, 156, 0.404);
+		box-shadow: 0 0 20px 0px rgba(37, 30, 30, 0.404);
 		transform: scale(.95);
 		opacity: 0;
 		
 	}
 }
-
 
 .education__card:hover {
 	box-shadow: 9px 9px 5px -8px rgba(0,0,0,0.5);
