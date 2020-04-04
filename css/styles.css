@@ -193,11 +193,6 @@ img {
 	color: var(--color-main);
 }
 
-
-
-
-
-
 .header__list {
 	display: flex;
 	flex-direction: row;
@@ -214,10 +209,10 @@ img {
 	font-family: var(--default-ff);
 } 
 
-.header__list-item:hover a {
-	border-bottom: 2px solid var(--color-main);
+.header__list-item:hover a{
 	color: var(--color-main);
-}
+	border-bottom: 2px solid var(--color-main);
+} 
 
 @media (min-width: 986px) {
 	.header__nav {
@@ -232,13 +227,10 @@ img {
 	background-color: var(--color-transparent);
 	z-index: 3;
 	transform: scale(0.95);
-	
 	}
-
 }
 
 @media (max-width: 985px) {
-
 	.header__nav {
 		position: absolute;
 		width: 250px;
@@ -269,7 +261,6 @@ img {
 		transition: all ease .3s;
 	}
 	
-
 	.miCheckbox::before {
 		content: " ";
 		height: 2px;
@@ -280,7 +271,6 @@ img {
 		position: fixed;
 		cursor: pointer;
 		transition: all ease .3s;
-
 	}
 	
 	.miCheckbox::after {
@@ -303,7 +293,6 @@ img {
 		background: var(--color-negative);
 		transform: translate(200%);
 		transition: all 1s;
-		
 	}
 	
 	.header__list a {
@@ -335,7 +324,30 @@ img {
 	}
   	#miCheckbox-chk:checked ~ .miCheckbox::after{
 		transform: rotate(-36deg) translate(10px, -4px);
-		
+	}
+
+	.header__list--submenu {
+		transform: translate(200%, .5rem);
+		z-index: -2;
+		width: 234px;
+	}
+
+	.projects:hover > ul, 
+	.header__list--submenu--item:hover {
+		transition: all .8s ease;
+		visibility: visible;
+		opacity: 1;
+
+		transform: translate(1.3rem, .5rem);
+	}
+
+	.header__list--submenu--item:hover {
+		transform: translate(0);
+		background-color: var(--color-soft);
+	}
+
+	.header__list--submenu--item a {
+		color: var(--color-positive);
 	}
 
 } 
@@ -609,7 +621,6 @@ img {
 	background-image: linear-gradient(to bottom right, var(--color-secondary), var(--color-soft));
 }
 
-
 @media (max-width: 430px) {
 	#education {
 		padding: 2rem 1rem;
@@ -771,8 +782,6 @@ progress[value]::-webkit-progress-value {
 	border-radius: 10px; 
 }
 
-
-
 /* IDIOMAS */
 
 #language {
@@ -805,6 +814,7 @@ progress[value]::-webkit-progress-value {
 	width: 100px;
 	margin: 0 100px;
 	align-items: center;
+	font-size: var(--text-default);
 }
 
 @media (max-width: 840px) {
@@ -823,8 +833,6 @@ progress[value]::-webkit-progress-value {
 	}
 }
 
-
-
 .language__name {
 	text-align: center;
 }
@@ -836,6 +844,85 @@ progress[value]::-webkit-progress-value {
 	.language__title {
 		margin: 2rem;
 	}
+}
+
+/* PROJECTOS*/
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	padding: 4rem;
+	background-color: var(--color-soft);
+	background-image: linear-gradient(to bottom right, var(--color-secondary), var(--color-soft));
+}
+
+@media (max-width: 430px) {
+	#projects {
+		padding: 2rem 1rem;
+	}
+}
+
+.projects-header {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.projects__title {
+	font-family: var(--title-ff);
+	font-size: var(--text-m);
+	margin: 1rem;
+	color: var(--color-positive);
+}
+
+.projects__galery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-self: center;
+	margin-top: 2rem auto;
+	max-width: 1100px;
+}
+
+.projects__card {
+	background: var(--color-main);
+	border-radius: 10px;
+	padding: 2rem;
+	margin: 1rem;
+	width: 280px;
+	min-height: 280px;
+	font-family: var(--default-ff);
+	animation: inicioEducation .6s ease-in;
+}
+
+.projects__card--title {
+	font-weight: bold;
+	text-decoration: underline solid var(--color-negative);
+	padding-bottom: 1rem;
+	line-height: 1.4em;
+}
+
+.projects__card--description {
+	line-height: 1.4em;
+	padding-bottom: 1rem;
+}
+
+.projects__card--btn {
+	background-color: transparent;
+	padding: 8px;
+	border-radius: 6px;
+	border: 2px solid var(--color-strong);
+	font-size: var(--text-xs);
+	transition: all .5s;
+}
+
+.projects__card--btn a {
+	color: var(--color-strong);
+}
+
+.projects__card--btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 /* HABILIDADES */

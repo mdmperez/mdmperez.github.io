@@ -12,7 +12,6 @@ function scrollActivate() {
 }
 
 //Botones tooltips
-
 const btns = document.querySelectorAll('.experience_list__btn');
 const tooltips = document.querySelectorAll('.experience_list__tooltip');
 const closeElements = document.querySelector('.experience_list__tooltip--close');
@@ -23,9 +22,6 @@ btns.forEach(btn => {
    closeElement.addEventListener('click', closeTooltip);
   
 });
-  
-
-
 
 //Funcion para abrir
 function openTooltip() {
