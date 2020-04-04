@@ -183,7 +183,7 @@ table {
     margin-top: 10rem;
     position: absolute;
     transition: all ease-in-out .4s;
-    width: 50vw;
+    max-width: 800px;
     z-index: 2;
 }
 
@@ -193,14 +193,13 @@ table {
     font-size: 28px;
     font-weight: 300;
     line-height: 1.4em;
-    padding: 2.5rem 1.5rem 0 1.5rem;
+    padding: 2.5rem 2rem 0 2rem;
     text-align: center;
 }
 
-
 .section-to-do__input {
     border: 1px solid var(--color-primary);
-    margin: 2rem 2rem 0 7rem;
+    margin: 2rem 2rem 0 5rem;
     width: 200px;
 }
 
@@ -225,6 +224,9 @@ table {
 }
 
 .section-to-do__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-family: var(--font-li);
     font-size: 32px;
     margin: 2rem 5rem;
