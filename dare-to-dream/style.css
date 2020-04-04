@@ -198,13 +198,18 @@ table {
 }
 
 .section-to-do__input {
-    border: 1px solid var(--color-primary);
-    margin: 2rem 2rem 0 5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-primary);
+    height: 24px;
+    margin: 2rem 1rem 0 12rem;
     width: 200px;
+  
 }
 
 .section-to-do__input::placeholder {
     padding-left: .25rem ;
+    color: var(--color-primary);
 }
 
 .section-to-do__btn {
@@ -229,7 +234,7 @@ table {
     align-items: flex-start;
     font-family: var(--font-li);
     font-size: 32px;
-    margin: 2rem 5rem;
+    margin: 2rem 7rem;
 }
 
 .section-to-do__list li {
@@ -311,7 +316,7 @@ table {
     opacity: 1;
     padding: 12px 28px 12px 12px;
     position: absolute;
-    transform: translate(76px, -76px);
+    transform: translate(376px, -76px);
     transition: all ease-in-out .4s;
     visibility: visible;
 }
@@ -325,18 +330,27 @@ table {
 	transition: all .5s;
 }
 
+@media (max-width: 994px)  {
+    .show-msg {
+        transform: translate(276px, -76px);
+    }
+}
+
 @media (max-width: 950px) {
     .section-to-do__input {
-        
-        margin: 2rem 2rem 0 4rem;
+        margin: 2rem 2rem 0 12rem;
         width: 180px;
     }
 
-    .section-to-do__list {
-        font-size: 26px;
+    .section-to-do__list { 
         margin: 2rem 4rem;
     }
-    
+}
+
+@media (max-width: 860px)  {
+    .show-msg {
+        transform: translate(176px, -76px);
+    }
 }
 
 @media (max-width: 810px) {
@@ -348,19 +362,23 @@ table {
     }
 
     .section-to-do__input {
-        margin: 2rem 2rem 0 3rem;
+        margin: 2rem 2rem 0 7rem;
         width: 150px;
     }
 
     .section-to-do__list {
-        margin: 2rem 3rem;
+        margin: 2rem 4rem;
+        font-size: 26px;
+    }
+    .show-msg {
+        transform: translate(106px, -76px);
     }
     
 }
 
 @media (max-width: 645px) {
     .section-to-do__input {
-        margin: 2rem 1rem 0 3rem;
+        margin: 2rem 1rem 0 5rem;
         width: 150px;
     }
 
@@ -392,8 +410,19 @@ table {
     }
 }
 
+@media (max-width: 400px) {
+    .section-to-do__input {
+        margin: 2rem 1.5rem 0 1.5rem;
+       
+    }
+}
+
 @media (max-width: 365px) {
     .section-to-do {
         width: 95vw;
+    }
+    .section-to-do__input {
+        margin: 2rem 1rem 0 2rem;
+       
     }
 }
