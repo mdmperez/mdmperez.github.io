@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +47,7 @@ table {
 :root {
 /* FONTS */
     --font-titles: 'Montserrat', sans-serif;
-    --font-li: 'Reenie Beanie', cursive;
+    --font-li: 'Comic Neue', cursive;
 
     /* COLORS */
     --color-primary: #090a0f;
@@ -67,6 +67,7 @@ table {
     height: 100%;
     overflow: hidden;
     width: 100vw;
+    
 }
 
 .section-stars {
@@ -231,37 +232,50 @@ table {
 .section-to-do__list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: space-around;
     font-family: var(--font-li);
-    font-size: 32px;
+    font-size: 20px;
     margin: 2rem 7rem;
 }
 
 .section-to-do__list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: var(--color-primary);
-    padding-bottom: .5em;   
+    padding-bottom: 1.4em;   
 }
 
-.section-to-do__list li a{
+.section-to-do__list div {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-to-do__list div a{
+    align-items: center;
     background: var(--color-soft);
     border: 1px solid var(--color-error);
     border-radius: 4px;
     color: var(--color-primary);
+    display: flex;
     font-family: var(--font-titles);
     font-size: 14px;
     font-weight: bold;
+    height: 22px;
+    justify-content: center;
     margin-left: 2em;
-    padding: 2px 4px;
     text-decoration: none;  
+    width: 17px;
 }
 
-.section-to-do__list li input[type="checkbox"] {
+.section-to-do__list div input[type="checkbox"] {
     position: relative;
     margin-left: 2em;
-    top: 3px;
+    top: 7px;
+
 }
 
-.section-to-do__list li input[type="checkbox"]:before {
+.section-to-do__list div input[type="checkbox"]:before {
     background: var(--color-soft);
 	border: 1px solid var(--color-secondary);
     border-radius: 4px;
@@ -272,24 +286,25 @@ table {
 	width: 17px;
 }
 
-.section-to-do__list li input[type="checkbox"]:checked:before {
+.section-to-do__list div input[type="checkbox"]:checked:before {
     border-color: var(--color-check);
 }
 
-.section-to-do__list li input[type="checkbox"]:checked:after {
+.section-to-do__list div input[type="checkbox"]:checked:after {
     content: "";
-    width: 10px;
-    height: 4px;
+    width: 9px;
+    height: 3px;
     border: 4px solid var(--color-check);
     position: absolute;
     border-right: 0;
     top: -3px;
-    right: -5px;
+    right: -4px;
     border-top: 0;
     transform: rotate(-55deg);
 }
 
 .hide {
+   
     opacity: 0;   
     transition: all ease-in-out .4s;
     transform: scale(.5) translateY(-200px);
@@ -344,6 +359,9 @@ table {
 
     .section-to-do__list { 
         margin: 2rem 4rem;
+        width: 430px;
+        align-self: center;
+        font-size: 18px;
     }
 }
 
@@ -368,7 +386,7 @@ table {
 
     .section-to-do__list {
         margin: 2rem 4rem;
-        font-size: 26px;
+        width: 330px;
     }
     .show-msg {
         transform: translate(106px, -76px);
@@ -409,11 +427,17 @@ table {
         transform: translate(2px, -62px);
     }
 }
+@media (max-width: 450px) {
+    .section-to-do__list {
+        width: 215px;
+        font-size: 16px;
+        margin: 2rem 2rem;
+    }
+}
 
 @media (max-width: 400px) {
     .section-to-do__input {
         margin: 2rem 1.5rem 0 1.5rem;
-       
     }
 }
 

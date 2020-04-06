@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generador de firmas de email</title>
+</head>
+<body class="wrapper">    
+    <svg class="svg_sprite" >
+        <symbol viewBox="0 0 64 64" id="ico">
+            <path d="m61 50h-1v-23.69a8.928 8.928 0 0 0 -2.633-6.357l-3.367-3.367v-5.586a5.006 5.006 0 0 0 -5-5h-42a5.006 5.006 0 0 0 -5 5v24a5.006 5.006 0 0 0 5 5h33v5a6.973 6.973 0 0 0 2.111 5h-1.111a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-6a1 1 0 0 0 -1-1zm-54-42h42a3 3 0 0 1 3 3v.393l-24 12.48-24-12.48v-.393a3 3 0 0 1 3-3zm13.512 14.234-16.512 9.076v-17.663zm-16.512 12.766v-1.409l18.645-10.248 4.894 2.545a1 1 0 0 0 .922 0l23.539-12.241v18.036l-7.25-6.837a4.082 4.082 0 0 0 -5.65.009 4.021 4.021 0 0 0 0 5.662l7.486 7.483h-39.586a3 3 0 0 1 -3-3zm38 10v-5h7a1 1 0 0 0 .707-1.707l-9.19-9.19a2 2 0 1 1 2.846-2.816l8.95 8.441a1 1 0 0 0 1.687-.728v-14.586l1.953 1.953a6.945 6.945 0 0 1 2.047 4.943v23.69h-11a5.006 5.006 0 0 1 -5-5zm18 11h-18v-4h18z"/><path d="m18 34h20v2h-20z"/><path d="m12 34h4v2h-4z"/><path d="m22 30h14v2h-14z"/><path d="m16 30h4v2h-4z"/>
+        </symbol>      
+    </svg>
+    <header class="header">
+        <svg class="ico-contact"><use xlink:href="#ico"></use></svg>
+        <h1 class="header__title">¡Hola! Vamos a crear tu firma de email</h1>
+    </header>
+    <section class="section-form">
+        <form class="section-form__wrapper">
+            <input class="input" type=text id="nameField" placeholder="Nombre y apellidos">
+            <input class="input" type=text id="description" placeholder="Describe tu especialidad">
+            <input class="input" type="tel" pattern="[0-9]{10}" id="teleph" placeholder=Teléfono>
+            <input class="input" type=text id="linked" placeholder="Enlace a tu perfil de LinkedIn">
+            <div class="section-form__wrapper--content-sex" id="photo">
+                <input type=radio name="sexo" id="checkwoman">
+                <label for="sexo">Mujer</label>
+                <input type=radio name="sexo" id="checkman">
+                <label for="sexo">Hombre</label>
+            </div>
+            <!-- <input type="file" name="photo" id="photo" class="section-form__wrapper--input-file"> -->
+            <button class="section-form__wrapper--btn">Crear</button>
+        </form>
+    </section>
+    <section id="descText" class="results-wrapper">
+        <div class="results-wrapper__content-avatar">
+            <img id="avatar" src="">
+        </div>
+        <div class="results-wrapper__content-description">
+            <h2 id="descName"  class="results-wrapper__name">Tu nombre</h2>
+            <p  id="descJob" class="results-wrapper__job">Especialidad</p>
+            <div id="results" class="results-wrapper__contact">
+                <p class="results-wrapper__contact--title">Contacto:</p>
+                <span id="descTel" class="results-wrapper__contact--text">6XXXXXXXX</span>
+                <span class="results-wrapper__contact--text linkedin"><a id="enlaceLink" href="#" target="_blank">Perfil de LinkedIn >></a></span>
+            </div>
+        </div>
+    </section>
+    <section class="modal">
+        <article class="wrapper-modal">
+          <header class="wrapper-modal__header">Para copiar la firma pulsa:</header class="wrapper-modal">  
+          <span class="wrapper-modal__body">
+              <p>Ctrl+C</p>
+              <p>⌘+C</p>
+          </span class="wrapper-modal__header">
+          <a class="wrapper-modal__close">&times;</a>
+        </article>
+        <div class="wrapper-modal__overlay"></div>
+    </section>
+    <button type="submit" class="results__btn">Copiar firma >></button>
+    <script src="js.js" type="text/javascript"></script>
+</body>
+</html>

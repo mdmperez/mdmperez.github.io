@@ -38,34 +38,38 @@ function showDreams() {
         closeElement.addEventListener('click', closeTooltip);
         
     } else {
-        let li = document.createElement('LI');    
-        li.innerHTML = input.value ;
+        let li = document.createElement('LI'); 
+        let headerDream = document.createElement('HEADER');
+        let contentChecks = document.createElement('DIV'); 
+        headerDream.innerHTML = input.value ;
     
         const inputCheck = document.createElement("INPUT");
         inputCheck.setAttribute("type", "checkbox");
             
         let closeElement = document.createElement('A');
         closeElement.setAttribute('href', '#');
-        closeElement.innerHTML= 'X';
+        closeElement.innerHTML= '&#10008;';
     
         ulList.appendChild(li); 
-        li.appendChild(inputCheck);
-        li.appendChild(closeElement);
+        li.appendChild(headerDream); 
+        li.appendChild(contentChecks); 
+        contentChecks.appendChild(inputCheck);
+        contentChecks.appendChild(closeElement);
     
         input.value = '';
     
         function dreamChecked() {
             if(inputCheck.checked === true) {
-                inputCheck.parentElement.classList.toggle('completed');
+                headerDream.classList.toggle('completed');
             } else if (inputCheck.checked === false) {
-                li.classList.remove('completed');
+                headerDream.classList.remove('completed');
             }
         }
     
         inputCheck.addEventListener('change' , dreamChecked);
         
         function clearDream() {
-            closeElement.parentElement.remove();
+            closeElement.parentElement.parentElement.remove();
         }
         closeElement.addEventListener('click', clearDream);
     }

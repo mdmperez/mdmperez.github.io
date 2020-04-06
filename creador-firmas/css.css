@@ -1,0 +1,315 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+
+:root {
+    --color-positive: #ffffff;
+	--color-negative: #000000;
+    --color-main: #916dd5;
+    --color-strong: #3e206d;
+    --color-soft: #d89cf6;
+    --color-neutral: #f0e3ff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-negative);
+}
+
+.svg_sprite {
+    display:none;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-neutral);
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+}
+.header__title {
+    font-size: 2em;
+    text-align: center;
+    color: var(--color-strong);
+    font-family: 'Bad Script', sans-serif;
+}
+
+.ico-contact {
+    width: 38px; 
+    height: 38px; 
+    overflow: hidden;
+    padding-right: 20px;
+}
+  
+svg {
+    width: 100%; 
+    height: auto; 
+    fill: var(--color-negative);
+} 
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-main);
+    padding: 22px;
+    margin: auto;
+    border-radius: 14px;
+    width: 300px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.section-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input {
+    width: 260px;
+    height: 30px;
+    margin: .75em 0;
+    border: 0;
+    border-bottom: 1px solid var(--color-neutral);
+    background: transparent;
+    color: var(--color-positive);
+}
+
+.input::placeholder {
+    color: var(--color-positive);
+    font-size: 12px;
+}
+
+.section-form__wrapper--content-sex  {
+   padding: .75rem 1rem 0 1rem;
+   align-self: flex-start;
+}
+
+.section-form__wrapper--content-sex label {
+    color: var(--color-positive);
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+}
+
+.section-form__wrapper--input-file {
+    color: var(--color-positive);
+    margin: .75em 0;
+}
+
+.section-form__wrapper--btn {
+    width: 80px;
+    height: 40px;
+    margin-top: .75em;
+    font-size: 1rem;
+    color: var(--color-positive);
+    border-radius: 10px;
+    background: var(--color-main);
+    margin-left: auto;
+    cursor: pointer;
+    transition: all .7s; 
+    font-family: 'Bad Script', sans-serif;
+}
+
+.section-form__wrapper--btn:hover {
+    transform: scale(1.1);
+    background: var(--color-soft);
+    color: var(--color-strong);
+    border: none;
+}
+
+.results-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 12px auto;
+    background-color: var(--color-positive);
+    border-radius: 14px;
+    padding: 22px;
+    max-width: 500px;
+    line-height: 32px;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.results-wrapper__content-avatar {
+    width: 60px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 1em 1em 0;
+
+}
+
+#avatar {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+.results-wrapper__name {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.results-wrapper__job {
+    font-size: .85em;
+    line-height: 1.8em;
+   
+}
+
+.results-wrapper__contact {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+    font-size: .75em;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+.results-wrapper__content-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-wrapper__contact--title {
+    margin-right: 1.2em;
+}
+
+
+.results-wrapper__contact--text {
+    margin-right: 1.5em;
+}
+
+.results__btn {
+    display: flex;
+    margin: auto;
+    padding: 4px 16px;
+    border: 2px solid var(--color-strong);
+    border-radius: 14px;
+    font-size: 1.75rem;
+    color: var(--color-strong);
+    cursor: copy;
+    transition: all .7s; 
+    font-family: 'Bad Script', sans-serif;
+    background: transparent;
+}
+
+.results__btn:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    visibility: hidden;
+	opacity: 0;
+}
+
+.modal-open {
+    visibility: visible;
+	opacity: 1;
+}
+
+.wrapper-modal {
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    top: 30%;
+    right: 27%;
+    border-radius: 14px;
+    background: var( --color-positive);
+    border: 1px solid var(--color-strong);
+    font-size: 2em;
+    z-index: 51;  
+}
+
+.wrapper-modal__header {
+    margin: 0 0 2rem 0;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.wrapper-modal__body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.wrapper-modal__body > p {
+    margin: 0 2rem;
+}
+
+.wrapper-modal__close{
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	font-size: 1.75rem;
+    font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+	transition: all .3s;
+}
+
+.wrapper-modal__close:hover {
+    color: var(--color-soft);
+    cursor: pointer;
+}
+
+.wrapper-modal__overlay {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .5);
+}

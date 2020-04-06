@@ -885,6 +885,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .projects__card {
+	display: flex;
+	flex-direction: column;
 	background: var(--color-main);
 	border-radius: 10px;
 	padding: 2rem;
@@ -908,6 +910,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .projects__card--btn {
+	align-self: flex-end;
 	background-color: transparent;
 	padding: 8px;
 	border-radius: 6px;
