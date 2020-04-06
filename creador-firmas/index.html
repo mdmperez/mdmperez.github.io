@@ -19,7 +19,7 @@
     </header>
     <section class="section-form">
         <form class="section-form__wrapper">
-            <input class="input" type=text id="nameField" placeholder="Nombre y apellidos">
+            <input class="input" type=text id="nameField" placeholder="Nombre y apellidos" required>
             <input class="input" type=text id="description" placeholder="Describe tu especialidad">
             <input class="input" type="tel" pattern="[0-9]{10}" id="teleph" placeholder=Teléfono>
             <input class="input" type=text id="linked" placeholder="Enlace a tu perfil de LinkedIn">
@@ -29,23 +29,41 @@
                 <input type=radio name="sexo" id="checkman">
                 <label for="sexo">Hombre</label>
             </div>
-            <!-- <input type="file" name="photo" id="photo" class="section-form__wrapper--input-file"> -->
             <button class="section-form__wrapper--btn">Crear</button>
         </form>
     </section>
     <section id="descText" class="results-wrapper">
-        <div class="results-wrapper__content-avatar">
-            <img id="avatar" src="">
-        </div>
-        <div class="results-wrapper__content-description">
-            <h2 id="descName"  class="results-wrapper__name">Tu nombre</h2>
-            <p  id="descJob" class="results-wrapper__job">Especialidad</p>
-            <div id="results" class="results-wrapper__contact">
-                <p class="results-wrapper__contact--title">Contacto:</p>
-                <span id="descTel" class="results-wrapper__contact--text">6XXXXXXXX</span>
-                <span class="results-wrapper__contact--text linkedin"><a id="enlaceLink" href="#" target="_blank">Perfil de LinkedIn >></a></span>
-            </div>
-        </div>
+        <table cellspacing="0" cellpadding="0"  style="border-collapse: collapse;" align="center">
+            <tr>
+                <td width="60" class="results-wrapper__content-avatar">
+                    <img id="avatar" src="https://mdmperez.github.io/creador-firmas/img/woman2.gif" alt="Avatar"/>
+                </td>
+                <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                <td width="520" >
+                    <table class="results-wrapper__content-description"  width="100%" valign="top">
+                        <tr valign="top">
+                            <td id="descName" class="results-wrapper__name" style="font-family: 'Bad Script', sans-serif;">Tu nombre</td>
+                        </tr>
+                        <tr>
+                            <td id="descJob" class="results-wrapper__job" style="font-family: 'Bad Script', sans-serif;">Especialidad</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <table cellpadding="0" cellspacing="0" >
+                                    <tr id="results" class="results-wrapper__contact">
+                                        <td style="font-family: 'Rubik', sans-serif;">Contacto:</td>
+                                        <td style="font-size: 0; line-height: 0;" width="8">&nbsp;</td>
+                                        <td  style="font-family: 'Rubik', sans-serif;" id="descTel">6XXXXXXXX</td>
+                                        <td style="font-size: 0; line-height: 0;" width="8">&nbsp;</td>
+                                        <td><a  style="font-family: 'Rubik', sans-serif;" id="enlaceLink" href="#" target="_blank">Perfil de LinkedIn >></a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </section>
     <section class="modal">
         <article class="wrapper-modal">

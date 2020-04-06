@@ -67,7 +67,9 @@ a {
     width: 100vw;
     height: 100vh;
     background-color: var(--color-neutral);
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
@@ -166,65 +168,73 @@ svg {
     border: none;
 }
 
+/* RESULTADOS*/
+
 .results-wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 12px auto;
     background-color: var(--color-positive);
     border-radius: 14px;
+    height: 100px;
     padding: 22px;
-    max-width: 500px;
+    margin: 12px auto;
+    width: 500px;
     line-height: 32px;
     font-family: 'Bad Script', sans-serif;
 }
 
+@media (max-width: 580px) {
+    .header__title {
+        font-size: 1.75em;
+    }
+
+    .ico-contact {
+        display: none;
+    }
+
+    .results-wrapper {
+        width: 400px;
+        padding: 12px;
+    } 
+}
+
+@media (max-width: 400px) {
+    .header__title {
+        font-size: 1.75em;
+    }
+
+    .ico-contact {
+        display: none;
+    }
+
+    .results-wrapper {
+        width: 350px;
+    } 
+
+    .results-wrapper__contact {
+        font-size: 11px;
+    }
+}
+
 .results-wrapper__content-avatar {
-    width: 60px;
-    height: 70px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 0 1em 1em 0;
-
-}
-
-#avatar {
-    width: 100%; 
-    height: auto;
-    display: block; 
-}
-
-.results-wrapper__name {
-    font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-.results-wrapper__job {
-    font-size: .85em;
-    line-height: 1.8em;
-   
-}
-
-.results-wrapper__contact {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Rubik', sans-serif;
-    font-size: .75em;
-    font-weight: lighter;
-    line-height: 1.5em;
+    transform: translateY(10px);
 }
 
 .results-wrapper__content-description {
-    display: flex;
-    flex-direction: column;
+    transform: translateY(-50%);
 }
 
-.results-wrapper__contact--title {
-    margin-right: 1.2em;
+.results-wrapper__name {
+    font-size: 20px;
+    line-height: 30px;
 }
 
+.results-wrapper__job {
+    font-size: 14px;
+}
 
-.results-wrapper__contact--text {
-    margin-right: 1.5em;
+.results-wrapper__contact {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
 }
 
 .results__btn {
@@ -243,7 +253,7 @@ svg {
 
 .results__btn:hover {
     transform: scale(1.1);
-}
+} 
 
 .modal {
     visibility: hidden;
@@ -309,7 +319,17 @@ svg {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 200vh;
+    width: 200vw;
     background: rgba(0, 0, 0, .5);
+}
+
+@media(max-width: 700px) {
+    .wrapper-modal {
+        font-size: 1.75em;
+        height: 160px;
+        width: 400px;
+        top: 40%;
+        right: 17%;
+    }
 }
