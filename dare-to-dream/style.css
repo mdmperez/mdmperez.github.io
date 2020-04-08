@@ -319,8 +319,7 @@ table {
     font-family: var(--font-titles);
     opacity: 0;
     position: absolute;
-    transform: translate(76px, -300px);
-    transition: all ease-in-out .4s;
+    transition: opacity .7s;
     visibility: hidden;
 }
 
@@ -332,7 +331,7 @@ table {
     padding: 12px 28px 12px 12px;
     position: absolute;
     transform: translate(376px, -76px);
-    transition: all ease-in-out .4s;
+    transition: opacity .7s;
     visibility: visible;
 }
 

@@ -16,7 +16,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -206,20 +205,12 @@ svg {
     }
 
     .results-wrapper {
-        width: 350px;
+        width: 300px;
     } 
 
     .results-wrapper__contact {
         font-size: 11px;
     }
-}
-
-.results-wrapper__content-avatar {
-    transform: translateY(10px);
-}
-
-.results-wrapper__content-description {
-    transform: translateY(-50%);
 }
 
 .results-wrapper__name {
@@ -251,9 +242,9 @@ svg {
     background: transparent;
 }
 
-.results__btn:hover {
+/* .results__btn:hover {
     transform: scale(1.1);
-} 
+}  */
 
 .modal {
     visibility: hidden;
@@ -331,5 +322,21 @@ svg {
         width: 400px;
         top: 40%;
         right: 17%;
+    }
+}
+
+@media(max-width: 490px) {
+    .wrapper-modal {
+        font-size: 1.5em;
+        height: 130px;
+        width: 350px;
+        top: 50%;
+        right: 10%;
+    }
+}
+
+@media(max-width: 400px) {
+    .results-wrapper__content-avatar {
+        display: none;
     }
 }
