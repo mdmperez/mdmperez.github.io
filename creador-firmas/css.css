@@ -46,11 +46,12 @@ table {
 
 :root {
     --color-positive: #ffffff;
-	--color-negative: #000000;
-    --color-main: #916dd5;
-    --color-strong: #3e206d;
-    --color-soft: #d89cf6;
-    --color-neutral: #f0e3ff;
+    --color-negative: #000000;
+    --color-main: #233239;
+    --color-strong: #161220;
+    --color-soft: #e9c87b;
+    --color-neutral: #dfdce3;
+    --color-highlight: #ff533d;
 }
 
 a {
@@ -65,7 +66,7 @@ a {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-neutral);
+    background-color: var(--color-strong);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +81,7 @@ a {
 .header__title {
     font-size: 2em;
     text-align: center;
-    color: var(--color-strong);
+    color: var(--color-soft);
     font-family: 'Bad Script', sans-serif;
 }
 
@@ -94,13 +95,13 @@ a {
 svg {
     width: 100%; 
     height: auto; 
-    fill: var(--color-negative);
+    fill: var(--color-soft);
 } 
 
 .section-form {
     display: flex;
     flex-direction: column;
-    background: var(--color-main);
+    background: var(--color-soft);
     padding: 22px;
     margin: auto;
     border-radius: 14px;
@@ -120,14 +121,22 @@ svg {
     height: 30px;
     margin: .75em 0;
     border: 0;
-    border-bottom: 1px solid var(--color-neutral);
+    border-bottom: 1px solid var(--color-negative);
     background: transparent;
-    color: var(--color-positive);
+    color: var(--color-negative);
 }
 
 .input::placeholder {
-    color: var(--color-positive);
+    color: var(--color-negative);
     font-size: 12px;
+}
+
+.error {
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+.error::placeholder {
+    color: var(--color-highlight);
 }
 
 .section-form__wrapper--content-sex  {
@@ -136,13 +145,13 @@ svg {
 }
 
 .section-form__wrapper--content-sex label {
-    color: var(--color-positive);
+    color: var(--color-negative);
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
 }
 
 .section-form__wrapper--input-file {
-    color: var(--color-positive);
+    color: var(--color-negative);
     margin: .75em 0;
 }
 
@@ -152,8 +161,9 @@ svg {
     margin-top: .75em;
     font-size: 1rem;
     color: var(--color-positive);
-    border-radius: 10px;
     background: var(--color-main);
+    border: none;
+    border-radius: 10px;
     margin-left: auto;
     cursor: pointer;
     transition: all .7s; 
@@ -163,8 +173,9 @@ svg {
 .section-form__wrapper--btn:hover {
     transform: scale(1.1);
     background: var(--color-soft);
+    border: 1px solid var(--color-main);
     color: var(--color-strong);
-    border: none;
+   
 }
 
 /* RESULTADOS*/
@@ -232,19 +243,15 @@ svg {
     display: flex;
     margin: auto;
     padding: 4px 16px;
-    border: 2px solid var(--color-strong);
+    border: 2px solid var(--color-soft);
     border-radius: 14px;
     font-size: 1.75rem;
-    color: var(--color-strong);
+    color: var(--color-soft);
     cursor: copy;
     transition: all .7s; 
     font-family: 'Bad Script', sans-serif;
     background: transparent;
 }
-
-/* .results__btn:hover {
-    transform: scale(1.1);
-}  */
 
 .modal {
     visibility: hidden;

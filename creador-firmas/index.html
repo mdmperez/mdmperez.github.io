@@ -18,16 +18,16 @@
         <h1 class="header__title">¡Hola! Vamos a crear tu firma de email</h1>
     </header>
     <section class="section-form">
-        <form class="section-form__wrapper">
-            <input class="input" type=text id="nameField" placeholder="Nombre y apellidos" required>
-            <input class="input" type=text id="description" placeholder="Describe tu especialidad">
-            <input class="input" type="tel" pattern="[0-9]{10}" id="teleph" placeholder=Teléfono>
-            <input class="input" type=text id="linked" placeholder="Enlace a tu perfil de LinkedIn">
+        <form name="signature-form" class="section-form__wrapper">     
+            <input class="input" type=text name="name" id="nameField" placeholder="Nombre y apellidos" required>
+            <input class="input" type=text name="description" id="description" placeholder="Describe tu especialidad" required>
+            <input class="input" type="tel" name="telephone" maxlength="12" id="teleph" placeholder=Teléfono required>
+            <input class="input" type=text name="linkedin" id="linked" placeholder="Enlace a tu perfil de LinkedIn" required>
             <div class="section-form__wrapper--content-sex" id="photo">
-                <input type=radio name="sexo" id="checkwoman">
-                <label for="sexo">Mujer</label>
-                <input type=radio name="sexo" id="checkman">
-                <label for="sexo">Hombre</label>
+                <input type=radio name="sex" id="checkwoman" checked>
+                <label for="sex">Mujer</label>
+                <input type=radio name="sex" id="checkman">
+                <label for="sex">Hombre</label>
             </div>
             <button class="section-form__wrapper--btn">Crear</button>
         </form>
@@ -76,7 +76,7 @@
         </article>
         <div class="wrapper-modal__overlay"></div>
     </section>
-    <button type="submit" class="results__btn">Copiar firma >></button>
+    <button class="results__btn">Copiar firma >></button>
     <script src="js.js" type="text/javascript"></script>
 </body>
 </html>
