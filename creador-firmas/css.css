@@ -41,8 +41,12 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: 'Bad Script';
+    src: url(./media/BadScript.ttf);
+  }
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+
 
 :root {
     --color-positive: #ffffff;
