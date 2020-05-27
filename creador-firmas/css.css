@@ -51,11 +51,10 @@ table {
 :root {
     --color-positive: #ffffff;
     --color-negative: #000000;
-    --color-main: #233239;
-    --color-strong: #161220;
-    --color-soft: #e9c87b;
-    --color-neutral: #dfdce3;
-    --color-highlight: #ff533d;
+    --color-main: #cceabb;
+    --color-strong: #3f3f44;
+    --color-soft: #fdcb9e;
+    --color-neutral: #f7f7f7;
 }
 
 a {
@@ -70,7 +69,7 @@ a {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-strong);
+    background-color: var(--color-main);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,12 +79,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 40px;
+    padding-top: 40px;
 }
 .header__title {
     font-size: 2em;
     text-align: center;
-    color: var(--color-soft);
+    color: var(--color-strong);
     font-family: 'Bad Script', sans-serif;
 }
 
@@ -99,7 +98,7 @@ a {
 svg {
     width: 100%; 
     height: auto; 
-    fill: var(--color-soft);
+    fill: var(--color-strong);
 } 
 
 .section-form {
@@ -164,8 +163,8 @@ svg {
     height: 40px;
     margin-top: .75em;
     font-size: 1rem;
-    color: var(--color-positive);
-    background: var(--color-main);
+    color: var(--color-soft);
+    background: var(--color-strong);
     border: none;
     border-radius: 10px;
     margin-left: auto;
@@ -177,7 +176,7 @@ svg {
 .section-form__wrapper--btn:hover {
     transform: scale(1.1);
     background: var(--color-soft);
-    border: 1px solid var(--color-main);
+    border: 1px solid var(--color-strong);
     color: var(--color-strong);
    
 }
@@ -247,10 +246,10 @@ svg {
     display: flex;
     margin: auto;
     padding: 4px 16px;
-    border: 2px solid var(--color-soft);
+    border: 2px solid var(--color-strong);
     border-radius: 14px;
     font-size: 1.75rem;
-    color: var(--color-soft);
+    color: var(--color-strong);
     cursor: copy;
     transition: all .7s; 
     font-family: 'Bad Script', sans-serif;
