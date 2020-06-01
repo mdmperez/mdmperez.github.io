@@ -878,7 +878,6 @@ progress[value]::-webkit-progress-value {
 	justify-content: center;
 	align-self: center;
 	margin-top: 2rem auto;
-	max-width: 1100px;
 }
 
 .projects__card {
