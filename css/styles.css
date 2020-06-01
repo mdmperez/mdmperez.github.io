@@ -227,7 +227,7 @@ img {
 	box-shadow: 0 5px 30px rgba(0,0,0,0.5);
 	background-color: var(--color-transparent);
 	z-index: 3;
-	transform: scale(0.95);
+	transform: scale(0.95) translateY(-2px);
 	}
 }
 
