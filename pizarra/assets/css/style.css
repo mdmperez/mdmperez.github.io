@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'chalkboard';
+    src: url('../media/chalkboard.ttf');
+}
+
+@font-face {
+    font-family: 'simpsons';
+    src: url('../media/simpsons.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.wrapper {
+    background-color: #76c4eb;
+}
+
+.section-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.section-title__title {
+    color: #fad100;
+    font-family: 'simpsons', sans-serif;
+    font-size: 48px;
+    padding-bottom: 2rem;
+    text-align: center;
+    text-shadow: -5px 5px #000000;
+}
+
+.section-title__form {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-title__input{
+    background-color: #76c4eb;
+    border: 1px solid #000000;
+    color: #000000;
+    font-family: 'Chalkboard', cursive;
+    height: 20px;
+    width: 300px;
+} 
+
+.section-title__input::placeholder {
+    color: #000000;
+    font-family: 'Chalkboard', cursive;
+}
+
+.section-title__btn {
+    background-color: #fad100;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -5px 5px #000000;
+    cursor: pointer;
+    font-family: 'simpsons', sans-serif;
+    margin-left: 1rem;
+    padding: .5rem .75rem;
+    transition: all .5s;
+}
+
+.section-title__btn:hover {
+    transform: scale(1.1);
+}
+
+.section-blackboard {
+    background-color: rgba(58, 18, 13, 0);
+    background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    max-width: 1080px;
+}
+
+.section-blackboard__content-table {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Chalkboard', cursive;
+    font-size: 12px;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    min-height: 632px;
+    padding: 1rem;
+}
+
+.section-blackboard__content-table--item {
+    font-size: 8px;
+    padding: 0 2rem 1rem 0;
+}
+
+.content-bart {
+    bottom: 0;
+    left: 2rem;
+    overflow: hidden;
+    position: fixed;
+}
+
+@media (max-width: 1100px) {
+    .section-blackboard {
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+
+    .section-blackboard__content-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-bart img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 634px) {
+    .section-blackboard {
+        max-width: 456px;
+    }
+
+    .section-blackboard__content-table {
+        letter-spacing: 1px;
+        line-height: 1rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .section-blackboard {
+        max-width: 370px;
+    }
+
+    .section-title__title {
+        font-size: 36px;
+    }
+
+    .section-blackboard__content-table--item {
+        padding: 0 0 1rem 0;
+        line-height: 1.5rem;
+    }
+
+    .section-title__form {
+        flex-direction: column;
+    }
+
+    .section-title__btn {
+        align-self: center;
+        margin-top: 1rem;
+    }
+
+    .content-bart {
+        left: 0;
+    }
+
+    .content-bart img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 380px) {
+    .section-blackboard {
+        max-width: 310px;
+    }
+
+    
+}
