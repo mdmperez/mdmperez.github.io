@@ -51,9 +51,9 @@ table {
 :root {
     --color-positive: #ffffff;
     --color-negative: #000000;
-    --color-main: #cceabb;
+    --color-main: #e6ffe6;
     --color-strong: #3f3f44;
-    --color-soft: #fdcb9e;
+    --color-soft: #fee4cd;
     --color-neutral: #f7f7f7;
 }
 
@@ -107,7 +107,7 @@ svg {
     background: var(--color-soft);
     padding: 22px;
     margin: auto;
-    border-radius: 14px;
+    border-radius: 5px;
     width: 300px;
     font-family: 'Rubik', sans-serif;
 }
@@ -185,7 +185,7 @@ svg {
 
 .results-wrapper {
     background-color: var(--color-positive);
-    border-radius: 14px;
+    border-radius: 5px;
     height: 100px;
     padding: 22px;
     margin: 12px auto;
