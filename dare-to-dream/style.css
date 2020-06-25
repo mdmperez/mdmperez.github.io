@@ -154,7 +154,7 @@ table {
 }
   
 .section-stars__content-follow {
-    bottom: 7%;
+    bottom: 30%;
     color: var(--color-soft);
     cursor: pointer;
     font-family: var(--font-titles);
@@ -168,6 +168,7 @@ table {
     text-align: center;
     transition: all ease-in-out .5s;
 }
+
 
 .section-stars__content-follow:hover {
     transform: scale(1.2);
@@ -448,4 +449,25 @@ table {
         margin: 2rem 1rem 0 2rem;
        
     }
+}
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+}
+
+.footer__text {
+    color: var(--color-soft);
+    font-family: var(--font-titles);
+    font-size: 12px;
+    line-height: 1.4em;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__text a {
+    color: var(--color-check);
+    text-decoration: none;
 }

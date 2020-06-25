@@ -350,3 +350,22 @@ svg {
         display: none;
     }
 }
+
+.footer {
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+}
+
+.footer__text {
+    color: var(--color-strong);
+    font-family: 'Bad Script', sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 2em;
+    text-align: center;
+}
+
+.footer__text a {
+    text-decoration: none;
+}

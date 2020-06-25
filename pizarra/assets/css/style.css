@@ -186,6 +186,34 @@ ol, ul {
     .section-blackboard {
         max-width: 310px;
     }
+}
 
-    
+.footer {
+    bottom: 0;
+    position: relative;
+    right: 0;
+}
+
+.footer__text {
+    color: #000000;
+    font-family: 'simpsons', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    padding: 1em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.footer__text a {
+    color: #fad100;
+    text-decoration: none;
+    text-shadow: -1px 1px #000000;
+}
+
+@media (max-width: 500px) {
+    .footer__text {
+        font-size: 12px;
+        margin-left: auto;
+        max-width: 240px;
+    }
 }
