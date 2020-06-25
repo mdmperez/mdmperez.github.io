@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivial Pursuit</title>
+</head>
+<body class="wrapper">
+    <header class="header">
+        <div class="wrapper-cheese">
+            <span class="cheese green"></span>
+            <span class="cheese yellow"></span>
+            <span class="cheese orange"></span>
+            <span class="cheese pink"></span>
+            <span class="cheese blue"></span>
+            <span class="cheese purple"></span>
+        </div>
+        <h1 class="header__title">Trivial Pursuit</h1>
+    </header>
+    <main class="wrapper_main">
+        <section class="section_choose" id="section_choose">
+            <h2 class="section-choose__title">start the game</h2>
+            <label for="questions">Number of questions</label>
+            <select name="questions" id="questions">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+            </select>
+            <label for="category">Select category</label>
+            <select name="category" id="category"></select>
+            <label for="difficulty">Select difficulty</label>
+            <select name="difficulty" id="difficulty">
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+            </select>
+            <label for="type">Select type</label>
+            <select name="type" id="type">
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+            <button class="btn btn-play">Play</button>
+            <div id="mgs-no-data" class="msg-hide">
+                <p class="section_choose__msg-error--text">No data to display for this selection criteria.</p>
+            </div>
+        </section>
+
+        <section id="section-questions" class="hide">
+            <ul class="section_questions__list">
+                <li class="section_questions__list--item">
+                    <span class="cheese-answers"></span>
+                    <p id="li-category"></p>
+                </li>
+                <li class="section_questions__list--item"> 
+                    <span class="cheese-answers"></span>
+                    <p id="li-difficulty"></p>
+                </li>
+                <li class="section_questions__list--item">
+                    <span class="cheese-answers"></span>
+                    <p id="li-question"></p>
+                </li>
+                <li class="section_questions__list--item-answer">
+                    <p class="section_questions__list--item" for="answer"><span class="cheese-answers"></span>Posible answers: </p>
+                    <div class="section_questions__list--answer-options" name="answer" id="answer"></div>
+                </li>
+            </ul>
+            <button id="btn-next" class="hide">
+                <svg viewBox="0 0 64 64"><path d="m37.379 12.552c-.799-.761-2.066-.731-2.827.069-.762.8-.73 2.066.069 2.828l15.342 14.551h-39.963c-1.104 0-2 .896-2 2s.896 2 2 2h39.899l-15.278 14.552c-.8.762-.831 2.028-.069 2.828.393.412.92.62 1.448.62.496 0 .992-.183 1.379-.552l17.449-16.62c.756-.755 1.172-1.759 1.172-2.828s-.416-2.073-1.207-2.862z"/></svg>
+            </button> 
+            <div class="correct-hide">Correct answer!!!!</div>
+            <div class="error-hide">Error answer!!!!</div>
+        </section>
+        <section id="section-final" class="hide">
+            <header class="section-final--title">The game is finished!</header>
+            <ul class="section-final--list">
+                <li class="section-final--list--item">
+                    <span class="cheese-answers"></span>
+                    <p id="numberAnswers"></p>
+                </li>
+                <li class="section-final--list--item">
+                    <span class="cheese-answers"></span>
+                    <p id="numberCorrectAnswers"></p>
+                </li>
+            </ul>
+            <p class="section-final--text" id="youResult"></p>
+            <button class="btn-reload">
+                <svg viewBox="0 0 480.063 480.063">
+                   <path d="M469.923,171.36C439.586,69.719,346.125,0.046,240.052,0C159.239,0.327,83.94,41.039,39.412,108.48
+                       c-4.14,7.44-6.649,15.676-7.36,24.16V48h-32v128h128v-32h-72.32C91.56,75.075,162.379,31.428,240.052,30.4
+                       c115.432,0.785,208.815,94.168,209.6,209.6c-0.785,115.432-94.168,208.815-209.6,209.6
+                       c-92.115-1.071-172.856-61.854-199.36-150.08l-30.72,9.12c37.909,127.012,171.603,199.244,298.615,161.335
+                       C435.599,432.066,507.831,298.372,469.923,171.36z"/>
+                </svg>
+            </button>
+        </section>
+        <div class="hide pyro" id="fire">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Diseñado y desarrollado por <a target="_blank" href="https://mdmperez.github.io/"> María del Mar Pérez Ruiz</a></p>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
