@@ -942,7 +942,8 @@ progress[value]::-webkit-progress-value {
 }
 @media (min-width: 1900px){
 	#skill {
-	background-position-x: 1600px;
+		background-position-x: 1300px;
+		background-size: 13%;
 	}
 }
 @media (max-width: 1255px){
