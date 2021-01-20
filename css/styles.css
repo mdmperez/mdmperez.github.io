@@ -219,7 +219,7 @@ img {
 	.header__nav {
 	position: fixed;
 	width: 100vw;
-	transition: all ease .7s;
+	transition: transform ease .7s;
 	}
 	
 	.fixed-nav  {
@@ -287,7 +287,7 @@ img {
 	}
 	
 	.header__list {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		padding: 5rem 0;
 		height: 100%;
@@ -307,8 +307,10 @@ img {
 	}
 
 	#miCheckbox-chk:checked ~ .header__list {
-		transform: translate(5%);
+		display: flex;
 		height: 100%;
+		transform: translate(5%);
+		
 	}
 
 	#miCheckbox-chk:checked ~ .miCheckbox{
@@ -426,9 +428,6 @@ img {
 	}
 }
 
-.personal-date__content:hover {
-	box-shadow: 9px 9px 5px -8px rgba(0,0,0,0.5);
-}
 
 .personal-date__title {
 	font-size: var(--text-m);
@@ -859,6 +858,8 @@ progress[value]::-webkit-progress-value {
 	}
 }
 
+
+
 .projects-header {
 	display: flex;
 	align-items: center;
@@ -881,16 +882,19 @@ progress[value]::-webkit-progress-value {
 }
 
 .projects__card {
-	display: flex;
-	flex-direction: column;
+	animation: inicioEducation .6s ease-in;
 	background: var(--color-main);
 	border-radius: 10px;
-	padding: 2rem;
-	margin: 1rem;
-	width: 280px;
-	min-height: 280px;
+	display: flex;
+	flex-direction: column;
 	font-family: var(--default-ff);
-	animation: inicioEducation .6s ease-in;
+	height: 374px;
+	margin: 1rem;
+	min-height: 280px;
+	padding: 2rem;
+	width: 280px;
+	
+	
 }
 
 .projects__card--title {
@@ -912,6 +916,7 @@ progress[value]::-webkit-progress-value {
 	border-radius: 6px;
 	border: 2px solid var(--color-strong);
 	font-size: var(--text-xs);
+	margin-top: auto;
 	transition: all .5s;
 }
 
@@ -922,7 +927,7 @@ progress[value]::-webkit-progress-value {
 .projects__card--btn:hover {
 	cursor: pointer;
 	transform: scale(1.1);
-}
+} 
 
 /* HABILIDADES */
 
