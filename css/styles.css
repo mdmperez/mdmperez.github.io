@@ -287,13 +287,15 @@ img {
 	}
 	
 	.header__list {
+		background: var(--color-negative);
 		display: none;
 		flex-direction: column;
+		opacity: 0;
 		padding: 5rem 0;
 		height: 100%;
-		background: var(--color-negative);
+		
 		transform: translateX(200%);
-		transition: all 1s;
+		transition: transform 1s;
 	}
 	
 	.header__list a {
@@ -309,6 +311,7 @@ img {
 	#miCheckbox-chk:checked ~ .header__list {
 		display: flex;
 		height: 100%;
+		opacity: 1;
 		transform: translate(5%);
 		
 	}
@@ -889,7 +892,7 @@ progress[value]::-webkit-progress-value {
 	flex-direction: column;
 	font-family: var(--default-ff);
 	height: 374px;
-	margin: 1rem;
+	
 	min-height: 280px;
 	padding: 2rem;
 	width: 280px;
@@ -1059,3 +1062,19 @@ progress[value]::-webkit-progress-value {
 	color: var(--color-negative);
 }
 
+.owl-theme {
+	padding: 0 2em;
+	position: relative;
+  }
+  .owl-prev, .owl-next {
+	font-size: 60px !important;
+	position: absolute;
+	top: 50%;
+  }
+  .owl-prev {
+	  left: 0;
+  }
+
+  .owl-next  {
+	  right: 0;
+  }

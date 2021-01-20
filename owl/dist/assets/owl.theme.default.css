@@ -13,6 +13,7 @@
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
     font-size: 14px;
+    
     margin: 5px;
     padding: 4px 7px;
     background: #D6D6D6;
@@ -21,7 +22,8 @@
     border-radius: 3px; }
     .owl-theme .owl-nav [class*='owl-']:hover {
       background: #869791;
-      color: #FFF;
+      color: rgb(43, 0, 0);
+      
       text-decoration: none; }
   .owl-theme .owl-nav .disabled {
     opacity: 0.5;
@@ -48,3 +50,5 @@
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
+
+      
