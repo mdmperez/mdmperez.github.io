@@ -13,7 +13,7 @@
     "copyfiles": "^2.4.1",
     "firebase-tools": "^9.23.1",
     "sass": "^1.44.0",
-    "vite": "^2.7.2"
+    "vite": "^2.9.13"
   },
   "dependencies": {
     "jquery": "^3.6.0",
