@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copyfiles -u 3 src/assets/img/pelu-* dist/assets/",
+    "build": "vite build",
     "pro": "firebase deploy",
-    "copyDist": "copyfiles -u 3 src/assets/img/pelu-* dist/assets/",
     "publish": "firebase deploy",
     "preview": "vite preview"
   },
